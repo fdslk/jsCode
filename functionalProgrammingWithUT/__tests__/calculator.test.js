@@ -1,4 +1,5 @@
-const {add, multiply } = require("../calculator");
+const { add, multiply } = require("../calculator");
+const { hi } = require("../string");
 
 describe('calculator tests', () => {
 
@@ -7,5 +8,11 @@ describe('calculator tests', () => {
     });
     test("multiply 2 * 3 equal to 6", () => {
         expect(multiply(2, 3)).toBe(6);
+    })
+});
+
+describe('string operation tests', ()=>{
+    test("get Hi Bill", () => {
+        expect(hi("Bill")).toBe("Hi Bill");
     })
 });
