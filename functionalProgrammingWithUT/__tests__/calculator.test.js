@@ -1,5 +1,6 @@
 const { add, multiply } = require("../calculator");
 const { hi } = require("../string");
+const { checkAge } = require("../AgeCheck");
 
 describe('calculator tests', () => {
 
@@ -16,3 +17,7 @@ describe('string operation tests', ()=>{
         expect(hi("Bill")).toBe("Hi Bill");
     })
 });
+
+describe('age checking scenario', ()=>{
+    
+})
