@@ -26,6 +26,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+      working-directory: ./functionalProgrammingWithUT
+      run: composer install --no-scripts
     - run: npm ci
+      working-directory: ./functionalProgrammingWithUT
     - run: npm run build --if-present
+      working-directory: ./functionalProgrammingWithUT
     - run: npm test
+      working-directory: ./functionalProgrammingWithUT
